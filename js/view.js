@@ -13,7 +13,7 @@ var app = {
 };
 
 function loadFile() {
-    window.requestFileSystem(LocalFileSystem.PERSISTENT, 10*1024*1024, gotFS, error1);
+    window.requestFileSystem(LocalFileSystem.PERSISTENT, 10*1024*1024, gotFS, error);
 }
 
 function gotFS(fileSystem) {
@@ -35,9 +35,6 @@ function reader(file) {
 
 function error(err) {
     alert("Error reading data..." + err.code);
-}
-function error1(err) {
-    alert("Error1 reading data..." + err.code);
 }
 
 function readSuccess() {
@@ -89,7 +86,7 @@ function gotRewriteFileEntry(fileEntry) {
 function gotFileRewriter(writer) {
     var string = "";
     for (var loc in data) {
-        string += data[loc];
+        string += data[loc] + "\n";
     }
     
     writer.write(string);

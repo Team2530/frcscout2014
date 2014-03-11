@@ -7,7 +7,7 @@
     <author email="bookworm.as@gmail.com" href="http://tourneypicks.org">
         FRC Team 2530
     </author>
-    <feature name="http://api.phonegap.com/1.0/device" />
+    
     <preference name="orientation" value="default" />
     <preference name="target-device" value="universal" />
     <preference name="fullscreen" value="false" />
@@ -23,7 +23,6 @@
     <preference name="android-minSdkVersion" value="7" />
     <preference name="android-installLocation" value="auto" />
     <preference name="DisallowOverscroll" value="true" />
-    <plugin name="Bluetooth" value="org.apache.cordova.bluetooth.BluetoothPlugin" />
     <icon src="icon.png" />
     <icon gap:density="ldpi" gap:platform="android" src="res/icon/android/icon-36-ldpi.png" />
     <icon gap:density="mdpi" gap:platform="android" src="res/icon/android/icon-48-mdpi.png" />
