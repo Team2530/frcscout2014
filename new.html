@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+        <title>FRC Scout 2014</title>
+    </head>
+    <body>
+        <div id="app">
+            <h1>New Robots <button class="small" onclick="location.href='index.html';">Back</button></h1>
+            <hr>
+            <h2>Generic Information</h2>
+            <input type="number" id="generic-robot" placeholder="Team ID" inputmode="numeric" pattern="[0-9]{1,4}">
+            <input type="number" id="generic-ally1" placeholder="Ally #1 ID" inputmode="numeric" pattern="[0-9]{1,4}">
+            <input type="number" id="generic-ally2" placeholder="Ally #2 ID" inputmode="numeric" pattern="[0-9]{1,4}">
+            <input type="number" id="generic-enemy1" placeholder="Opponent #1 ID" inputmode="numeric" pattern="[0-9]{1,4}">
+            <input type="number" id="generic-enemy2" placeholder="Opponent #2 ID" inputmode="numeric" pattern="[0-9]{1,4}">
+            <input type="number" id="generic-enemy3" placeholder="Opponent #3 ID" inputmode="numeric" pattern="[0-9]{1,4}">
+            <hr>
+            <h2>Autonomous</h2>
+            <label>Drives forward? </label><select id="auton-drives"><option disabled selected>---</option><option value="yes">Yes</option><option value="no">No</option></select> 
+            <label>Shoots at high goal? </label><select id="auton-high"><option disabled selected>---</option><option value="yes">Yes</option><option value="no">No</option></select> 
+            <label>Shoots at hot goal? </label><select id="auton-hot"><option disabled selected>---</option><option value="yes">Yes</option><option value="no">No</option></select> 
+            <input type="number" id="auton-count" placeholder="Hot Goals Made" inputmode="numeric"><br> 
+            <label>Multiple autonomous codes?</label><select id="auton-codes"><option disabled selected>---</option><option value="yes">Yes</option><option value="no">No</option></select> 
+            <textarea id="auton-comments" placeholder="Additional comments"></textarea>
+            <hr>
+            <h2>Match</h2>
+            <label>Tosses over truss? </label><select id="match-trusstoss"><option disabled selected>---</option><option value="yes">Yes</option><option value="no">No</option></select> 
+            <label>Defends truss? </label><select id="match-trussdefend"><option disabled selected>---</option><option value="yes">Yes</option><option value="no">No</option></select> 
+            <label>Defends goal? </label><select id="match-goaldefend"><option disabled selected>---</option><option value="yes">Yes</option><option value="no">No</option></select> 
+            <label>Ball stuck on robot? </label><select id="match-stuck"><option disabled selected>---</option><option value="yes">Yes</option><option value="no">No</option></select>
+            <input type="number" id="match-assists" placeholder="Assists per Match" inputmode="numeric">
+            <input type="number" id="match-assists" placeholder="Cycles per Match" inputmode="numeric">
+            <p>High Goal</p>
+            <input type="number" id="match-highmade" placeholder="Shots made" inputmode="numeric">
+            <input type="number" id="match-highmiss" placeholder="Shots missed" inputmode="numeric">
+            <p>Low Goal</p>
+            <input type="number" id="match-lowmade" placeholder="Shots made" inputmode="numeric">
+            <input type="number" id="match-lowmiss" placeholder="Shots missed" inputmode="numeric">
+            <p>Catches</p>
+            <input type="number" id="match-catchmade" placeholder="Catches made" inputmode="numeric">
+            <input type="number" id="match-catchmiss" placeholder="Catches missed" inputmode="numeric">
+            <textarea id="match-comments" placeholder="Additional comments"></textarea>
+            <button onclick="save();">Save</button>
+        </div>
+        <div id="anav"></div>
+        <script type="text/javascript" src="phonegap.js"></script>
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/new.js"></script>
+    </body>
+</html>
