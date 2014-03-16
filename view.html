@@ -12,19 +12,22 @@
     </head>
     <body onload="app.initialize();">
         <div id="app">
-            <h1>View Robots <button class="small" onclick="location.href='index.html'">Back</button></h1>
-            <p>Number of robots: <span id="count">0</span></p>
-            <table>
-                <thead>
-                    <tr>
-                        <td>Robot ID</td>
-                        <td>Delete</td>
-                    </tr>
-                </thead>
-                <tbody id="robots">
-                </tbody>
-            </table>
-            <button onclick="deleteAll()">Delete All</button>
+            <h1>View Robots</h1>
+            <div id="content">
+                <button class="small" onclick="location.href='index.html'">Back</button>
+                <p>Number of robots: <span id="count">0</span></p>
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Robot ID</td>
+                            <td>Delete</td>
+                        </tr>
+                    </thead>
+                    <tbody id="robots">
+                    </tbody>
+                </table>
+                <button onclick="deleteAll()">Delete All</button>
+            </div>
         </div>
         <div id="anav"></div>
     </body>

@@ -9,7 +9,8 @@
     </head>
     <body>
         <div id="app">
-            <h1>New Robots <button class="small" onclick="location.href='index.html';">Back</button></h1>
+            <h1>New Robots</h1>
+            <button class="small" onclick="location.href='index.html';">Back</button>
             <hr>
             <h2>Generic Information</h2>
             <input type="number" id="generic-robot" placeholder="Team ID" inputmode="numeric" pattern="[0-9]{1,4}">
@@ -33,7 +34,7 @@
             <label>Defends goal? </label><select id="match-goaldefend"><option disabled selected>---</option><option value="yes">Yes</option><option value="no">No</option></select> 
             <label>Ball stuck on robot? </label><select id="match-stuck"><option disabled selected>---</option><option value="yes">Yes</option><option value="no">No</option></select>
             <input type="number" id="match-assists" placeholder="Assists per Match" inputmode="numeric">
-            <input type="number" id="match-assists" placeholder="Cycles per Match" inputmode="numeric">
+            <input type="number" id="match-cycles" placeholder="Cycles per Match" inputmode="numeric">
             <p>High Goal</p>
             <input type="number" id="match-highmade" placeholder="Shots made" inputmode="numeric">
             <input type="number" id="match-highmiss" placeholder="Shots missed" inputmode="numeric">

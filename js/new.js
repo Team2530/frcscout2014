@@ -3,7 +3,7 @@ function save() {
 }
 
 function gotFS(fileSystem) {
-    fileSystem.root.getFile("scoutdata.txt", {create: true}, gotFileEntry, error);
+    fileSystem.root.getFile("scoutdata.txt", {create: true, exclusive: false}, gotFileEntry, error);
 }
 
 function gotFileEntry(fileEntry) {
@@ -13,7 +13,7 @@ function gotFileEntry(fileEntry) {
 function gotFileWriter(writer) {
     var rid = Date.now();
     var data = {};
-    var ids = ["generic-robot", "generic-ally1", "generic-enemy1", "generic-ally2", "generic-enemy2", "generic-enemy3", "auton-count", "auton-comments", "match-assists", "match-assists", "match-highmade", "match-highmiss", "match-lowmade", "match-lowmiss", "match-catchmade", "match-catchmiss", "match-comments"];
+    var ids = ["generic-robot", "generic-ally1", "generic-enemy1", "generic-ally2", "generic-enemy2", "generic-enemy3", "auton-drives", "auton-high", "auton-hot", "auton-count", "auton-codes", "auton-comments", "match-trusstoss", "match-trussdefend", "match-goaldefend", "match-stuck", "match-assists", "match-cycles", "match-highmade", "match-highmiss", "match-lowmade", "match-lowmiss", "match-catchmade", "match-catchmiss", "match-comments"];
     for (var id in ids) {
         data[ids[id]] = $("#" + ids[id]).val();
     }
