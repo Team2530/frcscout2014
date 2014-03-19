@@ -1,0 +1,29 @@
+Transferring files via Bluetooth: 
+1.	On the computer, right click on the bluetooth status bar icon, and click add device.
+2.	Locate the desired device and continue to add a phone.
+3.	On the computer, right click on the bluetooth status bar icon and click receive a file. A box should pop up saying wait for a connection
+4.	On the phone, open the default file browser (My files), or other preferred file browser (File Exporer).
+5.	Locate the scoutdata.txt file in the root of the device storage (All files, then typically SD memory card).
+6.	Press and hold the file to bring up a dialogue box with sharing options, click share via. 
+7.	Click the Bluetooth share option. When a list of computers shows up, check for one named WINUSER-PC, and click on it.
+8.	On the computer, a file named scoutdata.txt should be waiting to transfer. By location, click on browse, and navigate to Desktop=>frclient, then click okay.
+9.	Click finish to start the file transfer. In the frclient folder, double check that the file exists.
+10.	Then follow steps in converting the data. 
+
+Transferring files via USB: 
+1.	Connect the device via USB.
+2.	On the device, enable MTP sharing from the notification center (swipe down from top, USB sharing options, tap the checkbox) 
+3.	On the computer, open my computer (Start => Computer) and wait for the device to show up 
+4.	Click on the phone and navigate to the location of the scoutdata.txt file (typically in the SD Card folder)
+5.	Copy the file to the frclient folder on the desktop. 
+6.	Then follow steps in converting the data. 
+
+Converting the data: 
+1.	Once the data file has been transferred from the device, click on the file named csv.pl (which is a perl script), to convert the data to a machine readable format.  
+2.	Copy the scoutdata.txt to the scoutdata folder, and rename it according to the scout’s name (e.g., Sunny.txt). 
+3.	Repeat above steps to copy every scout’s data to the folder, repeating until done
+
+Merge/opening the data in Tableau:
+1.	Once all scouts have synced their data, click on the program concat (of Windows Batch File type) to merge all data into the out.csv file.
+2.	Open Tableau by clicking on the desktop icon, and select open file. 
+
